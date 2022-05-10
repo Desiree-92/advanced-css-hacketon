@@ -1,0 +1,143 @@
+.social{
+  right: 0;
+  bottom: 3rem;
+  position: fixed;
+}
+
+@mixin social-media {
+  width: 20px;
+  height: 35px;
+  font-size: 2rem;
+  padding: 6px;
+}
+
+/* blog */
+
+.fa-laptop-code {
+  content: "\f5fc";
+  @include social-media();
+}
+
+.blog {
+  background: #e17b77;
+  color: rgb(7, 6, 6);
+  font-weight: 700;
+  width: 20em;
+  position: relative;
+  right: -17em;
+  display: block;
+  transition: all 750ms ease-in;
+  &::after {
+    content: "Read my blog";
+    padding: 2rem;
+  }
+  &:hover {
+    transform: translateX(-10em);
+  }
+}
+
+
+/* facebook */
+
+.fa-facebook {
+  content: "\f39e";
+  @include social-media();
+}
+
+.facebook {
+  background: #3b5998;
+  color: rgb(7, 6, 6);
+  font-weight: 700;
+  width: 20em;
+  position: relative;
+  right: -17em;
+  display: block;
+  transition: all 750ms ease-in;
+  &::after {
+    content: "go to my facebook";
+    padding: 2rem;
+  }
+  &:hover {
+    transform: translateX(-10em);
+  }
+}
+
+
+/* twitter */
+
+.fa-twitter {
+  content: "\f099";
+  @include social-media();
+}
+
+.twitter {
+  background: #00aced;
+  color: rgb(7, 6, 6);
+  font-weight: 700;
+  width: 20em;
+  position: relative;
+  right: -17em;
+  display: block;
+  transition: all 750ms ease-in;
+  &::after {
+    content: "go to my twitter";
+    padding: 2rem;
+  }
+  &:hover {
+    transform: translateX(-10em);
+  }
+}
+
+
+
+/* Linkedin */
+
+.fa-linkedin {
+  content: "\f0e1";
+  @include social-media();
+}
+
+.linkedin {
+  background: #007bb6;
+  color: rgb(7, 6, 6);
+  font-weight: 700;
+  width: 20em;
+  position: relative;
+  right: -17em;
+  display: block;
+  transition: all 750ms ease-in;
+  &::after {
+    content: "go to my linkedin";
+    padding: 2rem;
+  }
+  &:hover {
+    transform: translateX(-10em);
+  }
+}
+
+
+/* github */
+
+.fa-github {
+  content: "\f0e1";
+  @include social-media();
+}
+
+.github {
+  background:#333;
+  color: rgb(7, 6, 6);
+  font-weight: 700;
+  width: 20em;
+  position: relative;
+  right: -17em;
+  display: block;
+  transition: all 750ms ease-in;
+  &::after {
+    content: "See my github";
+    padding: 2rem;
+  }
+  &:hover {
+    transform: translateX(-10em);
+  }
+}
+

@@ -1,0 +1,73 @@
+@import "./constants";
+@import "./grid";
+@import "./social";
+
+html {
+    background: $background-color;
+    font-family: 'indie flower', cursive;
+}
+
+header,
+.grid1,
+.grid2,
+.grid3,
+.grid4,
+.grid5,
+.grid6,
+.grid7 {
+    background: $text-background;
+    margin: 50px;
+    border: 20px;
+    border-radius: 30px;
+    box-shadow: 4px 4px gray;
+    }
+
+h1 {
+    padding: 2.3rem;
+    font-size: 1.4rem;
+    text-align: center;
+    color: $text-color;
+
+}
+
+nav{
+    text-align: center;
+
+}
+
+.desiree {
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    border: solid 5px white;
+
+}
+
+footer {
+    background: $footer-color;
+    margin-top: -70px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: $text-background;
+}
+
+.tekst {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+
+section {
+    transition: opacity 750ms ease-in;
+    opacity: 1;
+  }
+
+
+@media screen and (min-width: 320px) {
+    header,
+    .grid {
+      max-width: 470px;
+    }
+  }
+

@@ -1,0 +1,363 @@
+/* grid */
+.parent-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: (auto)[7];
+      grid-template-rows: repeat(7, auto);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+.grid1,
+.grid2,
+.grid3,
+.grid4,
+.grid5,
+.grid6,
+.grid7 {
+  position: relative;
+  padding: 1em;
+}
+
+/* button */
+button {
+  position: absolute;
+  width: 300px;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  -webkit-transition: opacity .35s ease;
+  transition: opacity .35s ease;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  background-color: #7e4df1;
+  border-radius: 20px;
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 10px 8px #440d68;
+          box-shadow: 0px 0px 10px 8px #440d68;
+  z-index: 5;
+  font-family: 'indie flower', cursive;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+.grid1:hover section {
+  opacity: 0;
+}
+
+.grid2:hover section {
+  opacity: 0;
+}
+
+.grid3:hover section {
+  opacity: 0;
+}
+
+.grid4:hover section {
+  opacity: 0;
+}
+
+.grid5:hover section {
+  opacity: 0;
+}
+
+.grid6:hover section {
+  opacity: 0;
+}
+
+.grid7:hover section {
+  opacity: 0;
+}
+
+.grid1:hover button {
+  opacity: 1;
+}
+
+.grid2:hover button {
+  opacity: 1;
+}
+
+.grid3:hover button {
+  opacity: 1;
+}
+
+.grid4:hover button {
+  opacity: 1;
+}
+
+.grid5:hover button {
+  opacity: 1;
+}
+
+.grid6:hover button {
+  opacity: 1;
+}
+
+.grid7:hover button {
+  opacity: 1;
+}
+
+/* media querie */
+@media screen and (min-width: 768px) {
+  .parent-grid {
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    -ms-grid-rows: (auto)[4];
+        grid-template-rows: repeat(4, auto);
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1150px) {
+  .parent-grid {
+    -ms-grid-columns: (auto)[3];
+        grid-template-columns: repeat(3, auto);
+    -ms-grid-rows: (auto)[3];
+        grid-template-rows: repeat(3, auto);
+    position: relative;
+  }
+}
+
+@media screen and (min-width: 1740px) {
+  .parent-grid {
+    -ms-grid-columns: (auto)[4];
+        grid-template-columns: repeat(4, auto);
+    -ms-grid-rows: (auto)[2];
+        grid-template-rows: repeat(2, auto);
+    position: relative;
+  }
+}
+
+.social {
+  right: 0;
+  bottom: 3rem;
+  position: fixed;
+}
+
+/* blog */
+.fa-laptop-code {
+  content: "\f5fc";
+  width: 20px;
+  height: 35px;
+  font-size: 2rem;
+  padding: 6px;
+}
+
+.blog {
+  background: #e17b77;
+  color: #070606;
+  font-weight: 700;
+  width: 20em;
+  position: relative;
+  right: -17em;
+  display: block;
+  -webkit-transition: all 750ms ease-in;
+  transition: all 750ms ease-in;
+}
+
+.blog::after {
+  content: "Read my blog";
+  padding: 2rem;
+}
+
+.blog:hover {
+  -webkit-transform: translateX(-10em);
+          transform: translateX(-10em);
+}
+
+/* facebook */
+.fa-facebook {
+  content: "\f39e";
+  width: 20px;
+  height: 35px;
+  font-size: 2rem;
+  padding: 6px;
+}
+
+.facebook {
+  background: #3b5998;
+  color: #070606;
+  font-weight: 700;
+  width: 20em;
+  position: relative;
+  right: -17em;
+  display: block;
+  -webkit-transition: all 750ms ease-in;
+  transition: all 750ms ease-in;
+}
+
+.facebook::after {
+  content: "go to my facebook";
+  padding: 2rem;
+}
+
+.facebook:hover {
+  -webkit-transform: translateX(-10em);
+          transform: translateX(-10em);
+}
+
+/* twitter */
+.fa-twitter {
+  content: "\f099";
+  width: 20px;
+  height: 35px;
+  font-size: 2rem;
+  padding: 6px;
+}
+
+.twitter {
+  background: #00aced;
+  color: #070606;
+  font-weight: 700;
+  width: 20em;
+  position: relative;
+  right: -17em;
+  display: block;
+  -webkit-transition: all 750ms ease-in;
+  transition: all 750ms ease-in;
+}
+
+.twitter::after {
+  content: "go to my twitter";
+  padding: 2rem;
+}
+
+.twitter:hover {
+  -webkit-transform: translateX(-10em);
+          transform: translateX(-10em);
+}
+
+/* Linkedin */
+.fa-linkedin {
+  content: "\f0e1";
+  width: 20px;
+  height: 35px;
+  font-size: 2rem;
+  padding: 6px;
+}
+
+.linkedin {
+  background: #007bb6;
+  color: #070606;
+  font-weight: 700;
+  width: 20em;
+  position: relative;
+  right: -17em;
+  display: block;
+  -webkit-transition: all 750ms ease-in;
+  transition: all 750ms ease-in;
+}
+
+.linkedin::after {
+  content: "go to my linkedin";
+  padding: 2rem;
+}
+
+.linkedin:hover {
+  -webkit-transform: translateX(-10em);
+          transform: translateX(-10em);
+}
+
+/* github */
+.fa-github {
+  content: "\f0e1";
+  width: 20px;
+  height: 35px;
+  font-size: 2rem;
+  padding: 6px;
+}
+
+.github {
+  background: #333;
+  color: #070606;
+  font-weight: 700;
+  width: 20em;
+  position: relative;
+  right: -17em;
+  display: block;
+  -webkit-transition: all 750ms ease-in;
+  transition: all 750ms ease-in;
+}
+
+.github::after {
+  content: "See my github";
+  padding: 2rem;
+}
+
+.github:hover {
+  -webkit-transform: translateX(-10em);
+          transform: translateX(-10em);
+}
+
+html {
+  background: #c3cfe2;
+  font-family: 'indie flower', cursive;
+}
+
+header,
+.grid1,
+.grid2,
+.grid3,
+.grid4,
+.grid5,
+.grid6,
+.grid7 {
+  background: #fff;
+  margin: 50px;
+  border: 20px;
+  border-radius: 30px;
+  -webkit-box-shadow: 4px 4px gray;
+          box-shadow: 4px 4px gray;
+}
+
+h1 {
+  padding: 2.3rem;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #b695e1;
+}
+
+nav {
+  text-align: center;
+}
+
+.desiree {
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  border: solid 5px white;
+}
+
+footer {
+  background: #686de0;
+  margin-top: -70px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #fff;
+}
+
+.tekst {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+section {
+  -webkit-transition: opacity 750ms ease-in;
+  transition: opacity 750ms ease-in;
+  opacity: 1;
+}
+
+@media screen and (min-width: 320px) {
+  header,
+  .grid {
+    max-width: 470px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
